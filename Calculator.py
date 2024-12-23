@@ -1,7 +1,7 @@
 import math
 Start = input("Welcome to your personal calculator. Please write 's' to start!")
 if Start == "s":
-    Operation = input("Enter your operation. (a,m,d,)")
+    Operation = input("Enter your operation. (a,m,d,s,sq)")
 else: exit()
 if Operation == 'a':
     Add = (input("Enter First Digit."))
@@ -18,7 +18,15 @@ if Operation == 'd':
     Div2 = (input("Enter Second Digit."))
     DivSum = float(Div) / float(Div2)
     print(DivSum)
-
+if Operation == 's':
+    Sub = (input("Enter First Digit."))
+    Sub2 = (input("Enter Second Digit."))
+    SubSum = float(Sub) - float(Sub2)
+    print(SubSum)
+if Operation == 'sq':
+    SQ = (input("Enter First Digit."))
+    SubSum = math.sqrt(float(SQ))
+    print(SubSum)
 
 
 
